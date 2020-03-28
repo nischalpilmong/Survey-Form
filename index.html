@@ -12,90 +12,92 @@
 <body>
 <div class="container-fluid">
     <h1 id="title">Software Development Survey</h1>
-    <p id="description">Thank you for participating in the survey</p>
+    <p id="description">Thank you for participating in this survey</p>
     <form id="survey-form">
         <div id="information-form">
             <label id="name-label" for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Enter your name" required>
-            <br>
             <label id="email-label" for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Enter your email.." required>
-            <br>
-            <label id="age-label" for="age">Age</label>
-            <input id="age" name="age" min="10" max="99" type="number" placeholder="Enter your age.." required>
-            <br>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            <label id="number-label" for="number">Age</label>
+            <input id="number" name="age" min="10" max="99" type="number" placeholder="Enter your age" required>
         </div>
         <div id="dropdown-menu">
-            <p>Which option best describes your current role? </p>
-              <select id="dropdown" required>
-                <option disabled selected value>Select current role</option>
-                <option value="student">Student</option>
-                <option value="full">Full-time job</option>
-                <option value="part">Part-time job</option>
-                <option value="internship">Internship</option>
-                <option value="other">Other</option>
-              </select>
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name:"role" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full">Full-time job</option>
+            <option value="part">Part-time job</option>
+            <option value="internship">Internship</option>
+            <option value="other">Other</option>
+            </select>
         </div>
         <div id="radio-buttons">
             <p class="p-radio">How are you learning software development?</p>
-            <input type="radio" id="university" name="radio" value="university">
-            <label for="university">University</label>
+            <label id="radio" for="university">
+                <input id="university" name="radio" value="university" type="radio">University
+            </label>
             <br>
-            <input type="radio" id="online" name="radio" value="online">
-            <label for="online">Online Courses</label>
+            <label id="radio" for="online">
+                <input id="online" name="radio" value="online" type="radio">Online courses
+            </label>
             <br>
-            <input type="radio" id="boot-camp" name="radio" value="boot-camp">
-            <label for="boot-camp">Bootcamp</label>
+            <label id="radio" for="bootcamp">
+                <input id="bootcamp" name="radio" value="bootcamp" type="radio">Bootcamp
+            </label>
             <br>
-            <input type="radio" id="job" name="radio" value="job">
-            <label for="job">On-the-job</label>
+            <label id="radio" for="job">
+                <input id="job" name="radio" value="job" type="radio">On-the-job
+            </label>
+            <br>
         </div>
         <div id="checkboxes">
-            <p>What are your favourite specializations?</p>
+            <p id="p-checkbox">What are your favorite specializations?</p>
             <label id="checkbox" for="web">
-            <input type="checkbox" name="choice" value="web" id="web" required>Web Development
+                <input id="web" name="choice" value="web" type="checkbox" required>Web development
             </label>
             <br>
             <label id="checkbox" for="mobile">
-                <input type="checkbox" name="choice" value="mobile" id="mobile" required>Mobile Apps
+                <input id="mobile" name="choice" value="mobile" type="checkbox" required>Mobile Apps
             </label>
             <br>
             <label id="checkbox" for="desktop">
-                <input type="checkbox" name="choice" value="desktop" id="desktop" required>Desktop
+                <input id="desktop" name="bootcamp" value="desktop" type="checkbox" required>Desktop
             </label>
             <br>
             <label id="checkbox" for="videogame">
-                <input type="checkbox" name="choice" value="videogame" id="videogame" required>Video Games
+                <input id="videogame" name="choice" value="videogame" type="checkbox" required>Videogames
             </label>
             <br>
-            <label id="checkbox" for="embeddedsystem">
-                <input type="checkbox" name="choice" value="embedsystem" id="embeddedsystem" required>Embedded System
+            <label id="checkbox" for="embed">
+                <input id="embed" name="choice" value="embed" type="checkbox" required>Embedded Systems
             </label>
             <br>
-            <label id="checkbox" for="datascience">
-                <input type="checkbox" name="choice" value="datascience" id="datascience" required>Data Science
+            <label id="checkbox" for="data">
+                <input id="data" name="choice" value="data" type="checkbox" required>Data Science
             </label>
             <br>
             <label id="checkbox" for="cloud">
-                <input type="checkbox" name="choice" value="cloud" id="cloud" required>Cloud
+                <input id="cloud" name="choice" value="cloud" type="checkbox" required>Cloud
             </label>
             <br>
             <label id="checkbox" for="automation">
-                <input type="checkbox" name="choice" value="automation" id="automation" required>Automation
+                <input id="automation" name="choice" value="automation" type="checkbox" required>Automation
             </label>
             <br>
             <label id="checkbox" for="devops">
-                <input type="checkbox" name="choice" value="devops" id="devops" required>DevOps
+                <input id="devops" name="choice" value="devops" type="checkbox" required>DevOps
             </label>
             <br>
             <label id="checkbox" for="cyber">
-                <input type="checkbox" name="choice" value="cyber" id="cyber" required>Cyber Security
+                <input id="cyber" name="choice" value="cyber" type="checkbox" required>Cybersecurity
             </label>
-            <br>
         </div>
+        <br>
         <div id="opinion">
-            <label id="comment-label" for="text">Explain your choices:</label><br>
-             <textarea id="text" name="opinion" type="text" placeholder="Enter your comment.."></textarea>
+            <label id="comment-label" for="text">Explain your choices:</label>
+            <textarea id="text" name="opinion" type="text" placeholder="Enter your comment..."></textarea>
         </div>
         <div>
             <button type="submit" id="submit">Submit</button>
