@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+<div class="container-fluid">
+    <h1 id="title">Software Development Survey</h1>
+    <p id="description">Thank you for participating in the survey</p>
+    <form id="survey-form">
+        <div id="information-form">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            <br>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email.." required>
+            <br>
+            <label id="age-label" for="age">Age</label>
+            <input id="age" name="age" min="10" max="99" type="number" placeholder="Enter your age.." required>
+            <br>
+        </div>
+        <div id="dropdown-menu">
+            <p>Which option best describes your current role? </p>
+              <select id="dropdown" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full">Full-time job</option>
+                <option value="part">Part-time job</option>
+                <option value="internship">Internship</option>
+                <option value="other">Other</option>
+              </select>
+        </div>
+        <div id="radio-buttons">
+            <p class="p-radio">How are you learning software development?</p>
+            <input type="radio" id="university" name="radio" value="university">
+            <label for="university">University</label>
+            <br>
+            <input type="radio" id="online" name="radio" value="online">
+            <label for="online">Online Courses</label>
+            <br>
+            <input type="radio" id="boot-camp" name="radio" value="boot-camp">
+            <label for="boot-camp">Bootcamp</label>
+            <br>
+            <input type="radio" id="job" name="radio" value="job">
+            <label for="job">On-the-job</label>
+        </div>
+        <div id="checkboxes">
+            <p>What are your favourite specializations?</p>
+            <label id="checkbox" for="web">
+            <input type="checkbox" name="choice" value="web" id="web" required>Web Development
+            </label>
+            <br>
+            <label id="checkbox" for="mobile">
+                <input type="checkbox" name="choice" value="mobile" id="mobile" required>Mobile Apps
+            </label>
+            <br>
+            <label id="checkbox" for="desktop">
+                <input type="checkbox" name="choice" value="desktop" id="desktop" required>Desktop
+            </label>
+            <br>
+            <label id="checkbox" for="videogame">
+                <input type="checkbox" name="choice" value="videogame" id="videogame" required>Video Games
+            </label>
+            <br>
+            <label id="checkbox" for="embeddedsystem">
+                <input type="checkbox" name="choice" value="embedsystem" id="embeddedsystem" required>Embedded System
+            </label>
+            <br>
+            <label id="checkbox" for="datascience">
+                <input type="checkbox" name="choice" value="datascience" id="datascience" required>Data Science
+            </label>
+            <br>
+            <label id="checkbox" for="cloud">
+                <input type="checkbox" name="choice" value="cloud" id="cloud" required>Cloud
+            </label>
+            <br>
+            <label id="checkbox" for="automation">
+                <input type="checkbox" name="choice" value="automation" id="automation" required>Automation
+            </label>
+            <br>
+            <label id="checkbox" for="devops">
+                <input type="checkbox" name="choice" value="devops" id="devops" required>DevOps
+            </label>
+            <br>
+            <label id="checkbox" for="cyber">
+                <input type="checkbox" name="choice" value="cyber" id="cyber" required>Cyber Security
+            </label>
+            <br>
+        </div>
+        <div id="opinion">
+            <label id="comment-label" for="text">Explain your choices:</label><br>
+             <textarea id="text" name="opinion" type="text" placeholder="Enter your comment.."></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
